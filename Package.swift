@@ -12,6 +12,13 @@ let package = Package(
             name: "SwiftCharts",
             targets: ["SwiftCharts"]),
     ],
+    dependencies: [
+        // Here we define our package's external dependencies
+        // and from where they can be fetched:
+        .package(
+            url: "https://github.com/i-schuetz/SwiftCharts.git", 
+            from: "0.6.5"),
+    ],
     targets: [
         .target(
             name: "SwiftCharts",
