@@ -17,7 +17,7 @@ let package = Package(
         // Here we define our package's external dependencies
         // and from where they can be fetched:
         .package(
-            url: "https://github.com/i-schuetz/SwiftCharts.git", 
+            url: "https://github.com/groapp/SwiftCharts.git", 
             from: "0.6.5"),
     ],
     targets: [
