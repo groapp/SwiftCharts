@@ -11,9 +11,6 @@ let package = Package(
             name: "SwiftCharts",
             targets: ["SwiftCharts"]),
     ],
-    dependencies: [
-        // no dependencies
-    ],
     targets: [
         .target(
             name: "SwiftCharts",
