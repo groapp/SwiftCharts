@@ -1,31 +1,19 @@
-// swift-tools-version:5.1
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
-    name: "SwiftCharts",
-    platforms: [
-        .iOS(.v7),
-    ],
-    products: [
-        .library(
-            name: "SwiftCharts",
-            targets: ["SwiftCharts"]),
-    ],
-    dependencies: [
-        // Here we define our package's external dependencies
-        // and from where they can be fetched:
-        .package(
-            url: "https://github.com/groapp/SwiftCharts.git", 
-            from: "0.6.5"),
-    ],
-    targets: [
+     name: "SwiftCharts",
+     platforms: [
+         .iOS(.v8)
+     ],
+     products: [
+         .library(name: "SwiftCharts", targets: ["SwiftCharts"])
+     ],
+     targets: [
         .target(
-            name: "SwiftCharts",
-            dependencies: []),
-        .testTarget(
-            name: "SwiftCharts",
-            dependencies: ["SwiftCharts"]),
-    ]
-)
+               name: "SwiftCharts",
+               path: "SwiftCharts"
+        )
+     ],
+     swiftLanguageVersions: [.v5]
+ )
